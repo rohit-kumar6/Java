@@ -1,4 +1,4 @@
-package ClassTest;
+package Class_Constrcutor;
 
 public class Main {
     public static void main(String[] args){

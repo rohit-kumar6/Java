@@ -1,4 +1,6 @@
-package ClassTest;
+// Custructor ( Parameterised and Non-parameterised) , Constructor overloading, Constructor invoking from constructor, getter, setter
+
+package Class_Constrcutor;
 
 public class Bank {
     int accountNumber;
@@ -18,8 +20,24 @@ public class Bank {
      }
 
     public Bank(int accountNumber,int balance,String customerName,String email,int phoneNo){
+
         this.accountNumber = accountNumber;
         this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNo = phoneNo;
+
+        // Shoudl not use setter else any validation require
+        //setAccountNumber(accountNumber);
+        //setBalance(balance);
+        //setCustomerName(customerName);
+        //setEmail(email);
+        //setPhoneNo(phoneNo);
+    }
+
+    public Bank(String customerName, String email, int phoneNo) {
+        // Default value of some field
+        this(0000,0,customerName,email,phoneNo);
         this.customerName = customerName;
         this.email = email;
         this.phoneNo = phoneNo;
