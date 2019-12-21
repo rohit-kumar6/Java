@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class PrimitiveDataTypes {
     public static void main(String args[]){
 
@@ -60,5 +62,17 @@ public class PrimitiveDataTypes {
 
         // String
         String myString = "Hello World";
+
+        // Array
+        int[] myIntArray = new int[5];
+        int[] anotherArray = myIntArray;
+        // To print an array
+        System.out.println(Arrays.toString(myIntArray));
+        // it will return garbage value
+        // System.out.println(myIntArray);
+        // Update reference variable it will be update original variable
+        anotherArray[2] = 4;
+        System.out.println(Arrays.toString(myIntArray));
+
     }
 }
