@@ -6,3 +6,8 @@ List of Java keywords https://en.wikipedia.org/wiki/List_of_Java_keywords </br>
 Alt+Insert for Auto Generate Constructor + Getter/Setter or Goto code then generate</br>
 Inheritance used for IS A relationship </br>
 Compostition used for HAS A realtionship  </br>
+
+
+int[] myIntArray = new int[5]; </br> 
+To print an array </br>
+System.out.println(Arrays.toString(myIntArray));  // [0,0,0,0,0] </br>
